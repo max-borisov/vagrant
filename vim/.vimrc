@@ -33,6 +33,8 @@ Plugin 'gmarik/Vundle.vim'
 " Good looking bottom :)
 Bundle 'bling/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline_theme='dark'
 let g:airline_powerline_fonts = 1
 " let g:airline_enable_fugitive=1
@@ -62,6 +64,11 @@ Bundle 'ervandew/supertab'
 Bundle 'Lokaltog/vim-easymotion'
 
 Bundle 'shawncplus/phpcomplete.vim'
+
+" Install https://github.com/kien/ctrlp.vim
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+Bundle 'edkolev/promptline.vim'
 
 " Show trailing whitespace and spaces before a tab:
 :highlight ExtraWhitespace ctermbg=red guibg=red
