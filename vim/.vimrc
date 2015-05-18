@@ -8,7 +8,13 @@ syntax on
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-set t_Co=256
+" set t_Co=256
+if !has('gui_running')
+  set t_Co=256
+endif
+
+set encoding=utf-8
+scriptencoding utf-8
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -69,6 +75,8 @@ Bundle 'shawncplus/phpcomplete.vim'
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 Bundle 'edkolev/promptline.vim'
+
+Plugin 'itchyny/lightline.vim'
 
 " Show trailing whitespace and spaces before a tab:
 :highlight ExtraWhitespace ctermbg=red guibg=red
