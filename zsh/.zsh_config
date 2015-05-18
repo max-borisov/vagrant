@@ -3,8 +3,10 @@ plugins=(git common-aliases)
 export EDITOR='vim'
 export SHELL='/bin/zsh'
 
-alias ls="ls -la"
+alias ls="ls -lahFG"
 alias cl="clear"
 alias rl="source ~/.zshrc"
 alias apa="sudo /etc/init.d/apache2 restart"
 alias ubu="lsb_release -a"
+alias du="du -hsc"
+alias prg="cd /var/www"

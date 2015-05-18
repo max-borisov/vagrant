@@ -14,7 +14,9 @@ Vagrant.configure(2) do |config|
     host.manage_host = true
     host.aliases = [
         'local.ontris-2.com',
-        'local.dev.ontris.com'
+        'local.dev.ontris.com',
+        'local.nerds.dk',
+        'localhost',
     ]
     # host.files = [
         # 'config/hosts.json'

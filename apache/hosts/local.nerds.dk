@@ -1,0 +1,18 @@
+<VirtualHost *:80>
+	ServerAdmin webmaster@localhost
+	ServerName local.nerds.dk
+	DocumentRoot /var/www/PHP/local.nerds.dk/advanced/frontend/web
+
+<Directory /var/www/PHP/local.nerds.dk/advanced/frontend/web>
+ 	Options Indexes FollowSymLinks MultiViews
+ 	AllowOverride All
+ 	Order allow,deny
+ 	Allow from all
+	# Require all granted
+</Directory>
+
+	ErrorLog ${APACHE_LOG_DIR}/error.local.nerds.dk.log
+	CustomLog ${APACHE_LOG_DIR}/access.local.nerds.dk.log combined
+</VirtualHost>
+
+# vim: syntax=apache ts=4 sw=4 sts=4 sr noet
