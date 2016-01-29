@@ -19,13 +19,21 @@ add-apt-repository ppa:git-core/ppa -y
 apt-get update -y
 apt-get install -y git
 
+echo 'Install Nginx. Nginx requires software-properties-common and python-software-properties'
+apt-get install -y python-software-properties software-properties-common
+add-apt-repository ppa:nginx/stable
+apt-get update
+apt-get install -y nginx
+
 echo "Install php5.6"
 add-apt-repository -y ppa:ondrej/php5-5.6
 apt-get update -y
 apt-get install -y php5
 
+# sudo apt-get install php5-phpdbg
+
 echo "Install php extensions"
-apt-get install -y php5-cli php5-dev php5-fpm php5-curl php5-memcache php5-gd php5-mcrypt php5-mysql php-pear php5-imagick php5-sqlite php5-tidy php5-xmlrpc php5-xsl php5-intl php5-pgsql php-apc
+apt-get install -y php5-cli php5-dev php5-fpm php5-curl php5-memcache php5-gd php5-mcrypt php5-mysql php-pear php5-imagick php5-sqlite php5-tidy php5-xmlrpc php5-xsl php5-intl php5-pgsql php-apc php5-xdebug
 
 # php.ini
 # error_reporting = E_ALL
