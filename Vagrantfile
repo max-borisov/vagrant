@@ -2,10 +2,10 @@
 # vi: set ft=ruby :
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "LAMP-32"
-  config.vm.box_url = "http://files.vagrantup.com/precise32.box"
+  config.vm.box = "LAMP"
+  # config.vm.box_url = "http://files.vagrantup.com/precise32.box"
+  config.vm.box_url = "http://dl.dropbox.com/s/n5h6sw6y7yggi78/Ubuntu_12.04_LAMP_last.box"
 
-  # config.vm.network :forwarded_port, host: 9000, guest: 9000
   config.vm.network :forwarded_port, host: 8080, guest: 80
   config.vm.network :forwarded_port, host: 33060, guest: 3306
 
