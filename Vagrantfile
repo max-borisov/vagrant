@@ -16,6 +16,7 @@ Vagrant.configure(2) do |config|
     host.aliases = [
         'local.ontris-2.com',
         'local.dev.ontris.com',
+        'local.prod.ontris.com',
         'local.nerds.dk',
         'dashboard.local.nerds.dk',
         'local.marketplace.nerds',
