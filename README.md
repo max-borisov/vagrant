@@ -1,4 +1,4 @@
-Basic vagrant configuration.
+# Basic Vagrant configuration
 
 What's inside:
 * vim
